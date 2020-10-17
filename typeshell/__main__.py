@@ -56,4 +56,6 @@ def output(average_stats, stats, is_verbose):
 			'''
 			Using conflict_str (pytyper) to point to characters that were typed incorrectly
 			'''
-			print(f'  {pytyper.conflict_str(prompt, user_input)}\n')
+			conflict_str = pytyper.conflict_str(prompt, user_input)
+			if conflict_str != '':
+				print(f'  {conflict_str}')
