@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setup(
-    name = 'typeshell-cli',
+    name = 'typeshell',
     version = '0.1.3',
     author='Greyson Murray',
     author_email='greysonmurray.dev@gmail.com',
