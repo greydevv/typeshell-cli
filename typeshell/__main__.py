@@ -7,21 +7,19 @@ import pytyper
 
 def main():
 	parser = argparse.ArgumentParser(description='Practice your typing speed.')
-	parser.add_argument('-c', '--create', help='create a typing session', action=ValidateSession, metavar=('COUNT', 'TYPE'), nargs=2)
+	parser.add_argument('create', help='create typing session')
+	parser.add_argument('count', type=int, help='number of prompts in session', default=1)
+	parser.add_argument('type', help='type of prompts in session', choices=['proverbs', 'shakespeare'])
 	parser.add_argument('-V', '--version', help="show program version", action='version', version='%(prog)s 0.1.0')
 	parser.add_argument('-v', '--verbose', help='increase ouput verbosity', action='store_true')
 
 	args = parser.parse_args()
-	if len(sys.argv) == 1:
-		parser.print_help()
-		sys.exit(0)
 
 	if args.create:
-		print("creation")
-		prepare_session(args.create[0], args.create[1])
+		prepare_session(args.count, args.type)
 		proceed = input()
 		system('clear')
-		begin_session(args.create[0], args.create[1], args.verbose)
+		begin_session(args.count, args.type, args.verbose)
 
 def prepare_session(prompt_count, prompt_type):
 	system('clear')
