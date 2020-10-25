@@ -23,6 +23,9 @@ setup(
 		"Natural Language :: English"
     ],
     python_requires='>=3.8',
+    install_requires=[
+    	'pytyper'
+    ],
     packages = ['typeshell'],
     entry_points = {
         'console_scripts': [
