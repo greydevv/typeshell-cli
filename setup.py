@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = 'typeshell-cli',
-    version = '0.1.0',
+    version = '0.1.1',
     author='Greyson Murray',
     author_email='greysonmurray.dev@gmail.com',
     description='Typing test CLI tool.',
