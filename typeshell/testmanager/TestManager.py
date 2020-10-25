@@ -28,14 +28,14 @@ class TestManager:
 		session_data = []
 		for prompt in prompts:
 			seconds, user_input = self.prompt_input(prompt)
-			'''
+			"""
 			Using TestData (pytyper) to store data for each typing test.
-			'''
+			"""
 			td = pytyper.TestData(prompt, user_input, seconds)
 			session_data.append(td)
-		'''
+		"""
 		Using SessionData (pytyper) to store necessary data for typing session
-		'''
+		"""
 		session = pytyper.SessionData(tests=session_data)
 		self.averages = session.averages
 		for test in session.get_tests():

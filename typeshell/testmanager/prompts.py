@@ -1,5 +1,6 @@
-# Popular proverbs
-# 150
+"""
+150 Popular Proverbs
+"""
 PROVERBS = ["A bad workman always blames his tools.",
 			"A bird in hand is worth two in the bush.",
 			"Absence makes the heart grow fonder.",
@@ -151,8 +152,9 @@ PROVERBS = ["A bad workman always blames his tools.",
 			"You can't win them all.",
 			"You show me the man and I'll show you the rule."]
 
-# Quotes by William Shakespeare
-# 35
+"""
+35 William Shakespeare Quotes
+"""
 SHAKESPEARE = ["A fool thinks himself to be wise, but a wise man knows himself to be a fool.",
 			"An overflow of good converts to bad.",
 			"As soon go kindle fire with snow, as seek to quench the fire of love with words.",
