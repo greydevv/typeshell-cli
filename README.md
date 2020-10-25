@@ -30,7 +30,33 @@ count                  number of prompts in session
 -v, --verbose          increase output verbosity
 ```
 
-### Output
+#### Examples:
+
+To create a typing session with 3 proverbs:
+```
+typeshell create 3 proverbs
+```
+
+A confirmation input is needed before the typing session begins:
+```
+*-------[Generating session]-------*
+              Prompts:              
+                 3                  
+               Type:                
+              proverbs              
+*------[Press enter to begin]------*
+```
+
+When the session begins, the shell window will be cleared, only displaying the prompt and the space for an input:
+
+```
+Grief divided is made lighter.
+
+```
+
+Be aware, the timer starts immediately after pressing enter. To exit the current session, stop the shell processes via `KeyboardInterrupt`.
+
+#### Output
 
 Upon finishing a session, the average statistics for that session will be visible:
 ```
@@ -57,32 +83,6 @@ $ A ship in the harbor is safe, hut that is not what a ship is for
 $ Ebery man is the architext of his deinrny.
    ^                      ^           ^^^  
 ```
-
-#### Examples:
-
-To create a typing session with 3 proverbs:
-```
-typeshell create 3 proverbs
-```
-
-A confirmation input is needed before the typing session begins:
-```
-*-------[Generating session]-------*
-              Prompts:              
-                 3                  
-               Type:                
-              proverbs              
-*------[Press enter to begin]------*
-```
-
-When the session begins, the shell window will be cleared, only displaying the prompt and the space for an input:
-
-```
-Grief divided is made lighter.
-
-```
-
-Be aware, the timer starts immediately after pressing enter. To exit the current session, stop the shell processes via `KeyboardInterrupt`.
 
 ## License
 typeshell is licensed under the [MIT](https://github.com/greysonDEV/typeshell-cli/blob/main/LICENSE) License.
