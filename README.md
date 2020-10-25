@@ -47,7 +47,7 @@ A confirmation input is needed before the typing session begins:
 *------[Press enter to begin]------*
 ```
 
-When the session begins, the shell window will be cleared, only displaying the prompt and the space for an input:
+When the session begins, the shell window will be cleared, only displaying the prompt and space for an input:
 
 ```
 Grief divided is made lighter.
