@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name = 'typeshell-cli',
-    version = '0.1.2',
+    version = '0.1.3',
     author='Greyson Murray',
     author_email='greysonmurray.dev@gmail.com',
     description='Typing test CLI tool.',
@@ -26,6 +26,7 @@ setup(
     install_requires=[
     	'pytyper'
     ],
+    include_package_data=True,
     packages = ['typeshell'],
     entry_points = {
         'console_scripts': [
