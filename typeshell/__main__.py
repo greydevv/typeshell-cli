@@ -2,7 +2,6 @@ import sys
 from os import system
 import argparse
 from typeshell.testmanager.TestManager import TestManager
-from typeshell.ValidateSession import ValidateSession
 import pytyper
 
 def main():
