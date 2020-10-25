@@ -23,32 +23,6 @@ count                  number of prompts in session
                        type of prompts in session
 ```
 
-Examples:
-
-To create a typing session with 5 proverbs:
-```
-typeshell create 3 proverbs
-```
-
-A confirmation input is needed before the typing session begins:
-```
-*-------[Generating session]-------*
-              Prompts:              
-                 3                  
-               Type:                
-              proverbs              
-*------[Press enter to begin]------*
-```
-
-When the session begins, the shell window will be cleared, only displaying the prompt and the space for an input.
-
-```
-Grief divided is made lighter.
-
-```
-
-Something to be aware of is that the timer starts immediately after pressing enter.
-
 #### Optional Arguments
 ```
 -h, --help             show this help message and exit
@@ -84,9 +58,31 @@ $ Ebery man is the architext of his deinrny.
    ^                      ^           ^^^  
 ```
 
-### Notes
+#### Examples:
 
-To exit the current session, stop the shell processes via `KeyboardInterrupt`.
+To create a typing session with 3 proverbs:
+```
+typeshell create 3 proverbs
+```
+
+A confirmation input is needed before the typing session begins:
+```
+*-------[Generating session]-------*
+              Prompts:              
+                 3                  
+               Type:                
+              proverbs              
+*------[Press enter to begin]------*
+```
+
+When the session begins, the shell window will be cleared, only displaying the prompt and the space for an input:
+
+```
+Grief divided is made lighter.
+
+```
+
+Be aware, the timer starts immediately after pressing enter. To exit the current session, stop the shell processes via `KeyboardInterrupt`.
 
 ## License
 typeshell is licensed under the [MIT](https://github.com/greysonDEV/typeshell-cli/blob/main/LICENSE) License.
