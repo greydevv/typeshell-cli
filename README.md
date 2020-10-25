@@ -30,7 +30,7 @@ count                  number of prompts in session
 -v, --verbose          increase output verbosity
 ```
 
-#### Examples:
+#### Examples
 
 To create a typing session with 3 proverbs:
 ```
